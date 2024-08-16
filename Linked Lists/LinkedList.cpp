@@ -40,7 +40,8 @@ void InsertAtEnd(Node*& head,int d){
 }
 
 int main(){
-    Node* head=nullptr;
+    Node *head;
+    head=(struct Node*) malloc(sizeof(struct Node));
 
     InsertAtBegining(head,5);
     print(head);
